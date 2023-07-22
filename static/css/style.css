@@ -1,0 +1,178 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    margin: 0;
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    /* height: 80px; */
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  
+  .navbar-heading {
+    display: flex;
+    /* align-items: center; */
+    /* padding-top: 20px; */
+  }
+  
+  .navbar-heading img {
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+  }
+  
+  .navbar-heading h1 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: bolder;
+    padding-top: 20px;
+  }
+  
+  
+  
+  .heading-and-logo {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+  }
+  
+  /* .middle-logo {
+    margin-right: 20px;
+  } */
+  
+  .report-heading {
+    font-size: 36px;
+    font-weight: bold;
+    margin-left: 50px;
+  }
+  
+  /* Middle Logo Styles */
+  .middle-logo {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+  }
+  
+  .middle-logo img {
+    max-width: 200px;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Report Heading Styles */
+  /* .report-heading {
+    text-align: center;
+    margin: 30px 0;
+  } */
+  
+  /* Main Section Styles */
+  /* Additional styles for the updated layout */
+  .main-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin: 20px 90px;
+    border-radius: 20px;
+  }
+  
+  .section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /* justify-content: space-between; */
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  /* .section h1{
+    text-align: center;
+    margin-top: auto auto;
+  } */
+  
+  .subsection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    /* max-width: 620px; */
+    /* min-height: 420px; */
+    margin: 10px;
+  }
+  
+  /* .image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  } */
+  
+  .image-grid {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .image-cell {
+    margin: 20px;
+    min-width: 300px;
+    max-width: 300px;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .image-cell img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .image-cell table {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .image-cell th, .image-cell td {
+    padding: 8px;
+  }
+  
+  .table-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 320px;
+    margin: 30px;
+  }
+  
+  .table-right table {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .table-right th, .table-right td {
+    padding: 10px;
+  }
+  
+  
+  /* Heading and Visual Styles */
+  h1, h2 {
+    color: #333;
+  }

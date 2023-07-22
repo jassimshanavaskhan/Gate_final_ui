@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>People Counting Report</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-heading">
+      <img src="{{ url_for('static', filename='ADA LOGO.png') }}" alt="Logo">
+      <h1>Aseer Development Authority</h1>
+    </div>
+  </nav>
+
+  <div class="heading-and-logo">
+    <div class="middle-logo">
+      <img src="{{ url_for('static', filename='ADA LOGO.png') }}" alt="Middle Logo">
+    </div>
+    <div class="report-heading">
+      <h2>People Counting Report</h2>
+    </div>
+  </div>
+
+  <!-- Three Main Sections -->
+  <div class="main-section">
+    <!-- Section 1 -->
+    <div class="section">
+        <!-- <h1>Zone 1</h1>  -->
+      <div class="subsection">
+        <div class="image-grid">
+          <div class="image-cell">
+            <img src="{{ url_for('video_feed') }}" alt="{{ url_for('static', filename='Capture001.png') }}">
+            <table>
+              <tr>
+                <th>IN</th>
+                <th>OUT</th>
+              </tr>
+              <tr>
+                <td><span id="in_count">0</span></td>
+                <td><span id="out_count">0</span></td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="image-cell">
+            <img src=" {{ url_for('static', filename='Capture001.png') }}" alt="Image 1">
+            <table>
+              <tr>
+                <th>IN</th>
+                <th>OUT</th>
+              </tr>
+              <tr>
+                <td><span id="">0</span></td>
+                <td><span id="">0</span></td>
+              </tr>
+            </table>
+          </div>
+
+
+          <div class="image-cell">
+            <img src=" {{ url_for('static', filename='Capture001.png') }}" alt="Image 1">
+            <table>
+              <tr>
+                <th>IN</th>
+                <th>OUT</th>
+              </tr>
+              <tr>
+                <td><span id="">0</span></td>
+                <td><span id="">0</span></td>
+              </tr>
+            </table>
+          </div>
+
+
+          <div class="image-cell">
+            <img src="{{ url_for('static', filename='Capture001.png') }}" alt="Image 1">
+            <table>
+              <tr>
+                <th>IN</th>
+                <th>OUT</th>
+              </tr>
+              <tr>
+                <td><span id="">0</span></td>
+                <td><span id="">0</span></td>
+              </tr>
+            </table>
+          </div>
+          <!-- Repeat the above 'image-cell' three more times -->
+        </div>
+      </div>
+      <div class="table-right">
+        <table>
+            <tr>
+              <th>NET IN</th>
+            </tr>
+            <tr>
+              <td><span id="net_in_count">0</span></td>
+            </tr>
+          </table>
+          <table>
+            <tr>
+              <th>NET OUT</th>
+            </tr>
+            <tr>
+              <td><span id="net_out_count">0</span></td>
+            </tr>
+          </table>
+          <table>
+            <tr>
+              <th>Crowd Inside</th>
+            </tr>
+            <tr>
+              <td><span id="crowd_inside">0</span></td>
+            </tr>
+          </table>
+      </div>
+    </div>
+
+
+
+    <div class="section">
+        <div class="subsection">
+          <div class="image-grid">
+            <div class="image-cell">
+              <img src=" {{ url_for('static', filename='Capture001.png') }}" alt="Image 1">
+              <table>
+                <tr>
+                  <th>IN</th>
+                  <th>OUT</th>
+                </tr>
+                <tr>
+                  <td><span id="">0</span></td>
+                  <td><span id="">0</span></td>
+                </tr>
+              </table>
+            </div>
+  
+            <div class="image-cell">
+              <img src="{{ url_for('static', filename='Capture001.png') }}" alt="Image 1">
+              <table>
+                <tr>
+                  <th>IN</th>
+                  <th>OUT</th>
+                </tr>
+                <tr>
+                  <td><span id="">0</span></td>
+                  <td><span id="">0</span></td>
+                </tr>
+              </table>
+            </div>
+  
+  
+            <div class="image-cell">
+              <img src=" {{ url_for('static', filename='Capture001.png') }}" alt="Image 1">
+              <table>
+                <tr>
+                  <th>IN</th>
+                  <th>OUT</th>
+                </tr>
+                <tr>
+                  <td><span id="">0</span></td>
+                  <td><span id="">0</span></td>
+                </tr>
+              </table>
+            </div>
+  
+  
+            <div class="image-cell">
+              <img src="{{ url_for('static', filename='Capture001.png') }}" alt="Image 1">
+              <table>
+                <tr>
+                  <th>IN</th>
+                  <th>OUT</th>
+                </tr>
+                <tr>
+                  <td><span id="">0</span></td>
+                  <td><span id="">0</span></td>
+                </tr>
+              </table>
+            </div>
+            <!-- Repeat the above 'image-cell' three more times -->
+          </div>
+        </div>
+        <div class="table-right">
+          <table>
+              <tr>
+                <th>NET IN</th>
+              </tr>
+              <tr>
+                <td><span id="">0</span></td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <th>NET OUT</th>
+              </tr>
+              <tr>
+                <td><span id="">0</span></td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <th>Crowd Inside</th>
+              </tr>
+              <tr>
+                <td><span id="">0</span></td>
+              </tr>
+            </table>
+        </div>
+      </div>
+    <!-- Repeat the above 'section' two more times -->
+  </div>
+  <script type="text/javascript">
+    $(document).ready(function () {
+        // Function to update the in_count and out_count
+        function updateCounts() {
+            $.ajax({
+                url: '/count',
+                type: 'GET',
+                success: function (data) {
+                    $('#in_count').text(data.in_count);
+                    $('#out_count').text(data.out_count);
+                    var net_in = data.in_count 
+                    var net_out = data.out_count
+                    var crowd = data.in_count - data.out_count
+                    $('#net_in_count').text(net_in)
+                    $('#net_out_count').text(net_out) 
+                    $('#crowd_inside').text(crowd)
+                }
+            });
+        }
+
+        // Update the counts every 1 second
+        setInterval(updateCounts, 1000);
+    });
+</script>
+
+</body>
+</html>
